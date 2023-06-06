@@ -2,9 +2,8 @@
 
 
 def uppercase(str):
-    for j in range(len(str)):
-        i = ord(str[j])
-        if (i >= 97) and (i <= 122):
-            i -= 32
-            print("{}".format(chr(i)), end="")
+    for c in str:
+        if ord(c) >= ord('a') and ord(c) <= ord('z'):
+            c = chr(ord(c) - 32)
+            print("{}".format(c), end="")
             print()
