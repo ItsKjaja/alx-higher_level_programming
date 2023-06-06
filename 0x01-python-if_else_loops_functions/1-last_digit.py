@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 mod = abs(number) % 10
 if number < 0:
     mod = -mod
-    print(f"last digit of {number:d} is {mod:d} and is ", end="")
+    print("Last digit of {} is {} ".format(number, mod), end="")
     if mod == 0:
         print("0")
     elif mod > 5:
