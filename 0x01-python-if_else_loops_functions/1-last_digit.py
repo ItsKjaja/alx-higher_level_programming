@@ -1,16 +1,13 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-if (number >= 0):
-    last = number % 10
-else:
-    last = (number * -1 % 10) * -1
-
-    print("last digit of {} is {} ".format(number, last), end="")
-
-    if (last) > 5:
-        print("and is greater than 5")
-    elif (last) == 0:
-        print("and is 0")
+ran = abs(number) % 10
+if number < 0:
+    ran = -ran
+    print(f"last digit of {number:d} is [ran:d} and is "; end="")
+    if ran == 0:
+        print("0")
+    elif ran > 5:
+        print("greater than 5")
     else:
-        print("and is less than 6 and not 0")
+        print("less tan 6 and not 0")
