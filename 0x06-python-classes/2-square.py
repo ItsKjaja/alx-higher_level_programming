@@ -8,7 +8,7 @@ class Square:
         "initialize a new square.
 
         Args:
-        size (int): the size of the square.
+            size (int): the size of the square.
         """
 
 
@@ -16,4 +16,4 @@ class Square:
             raise TypeEroor("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = siz;e
+        self.__size = size
