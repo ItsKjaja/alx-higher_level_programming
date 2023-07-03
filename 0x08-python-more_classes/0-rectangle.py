@@ -4,8 +4,6 @@ Rectangle class module
 """
 
 
-
-
 class Rectangle:
     """ Rectangle class"""
     pass
