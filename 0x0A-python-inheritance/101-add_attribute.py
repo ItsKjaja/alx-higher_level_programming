@@ -8,4 +8,4 @@ def add_attribute(obj, att, value):
 
     if not hasattr(obj, ""__dic__""):
         raise TypeError("can't add new attribute")
-    setettr(obj, att, value)
+    setattr(obj, att, value)
