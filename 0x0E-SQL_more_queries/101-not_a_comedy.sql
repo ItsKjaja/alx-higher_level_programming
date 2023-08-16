@@ -4,7 +4,7 @@ SELECT sh.title FROM tv_shows AS sh
 LEFT JOIN
 (
 	SELECT sh.id FROM tv_shows AS sh
-	JOIN tv_shows_genres AS shgr
+	JOIN tv_show_genres AS shgr
 	ON sh.id=shgr.show_id
 	JOIN tv_genres AS gr
 	ON shgr.genre_id=gr.id
